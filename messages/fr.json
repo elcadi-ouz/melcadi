@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "greeting1": "Salut",
+    "greeting2": "à vous",
+    "iam": "JE SUIS",
+    "name": "ELCADI",
+    "role1": "développeur",
+    "role2": "fullstack",
+    "description": "Nous créons des applications web rapides, sécurisées et évolutives adaptées à votre entreprise"
+  },
+  "SideMenu": {
+    "home": "ACCUEIL",
+    "about": "À PROPOS",
+    "services": "SERVICES",
+    "projects": "PROJETS"
+  },
+  "About": {
+    "section": "01. À propos",
+    "name1": "MOHAMMAD",
+    "name2": "ELCADI",
+    "title": "Mon Parcours & Ma Philosophie",
+    "hireMe": "Engagez-moi",
+    "exploreWork": "Découvrir",
+    "description": "Bonjour ! Je suis Mohammad Elcadi, développeur web full-stack et freelance marocain. Je conçois des applications web modernes, sécurisées et évolutives — de la conception au déploiement. Passionné par la sécurité web et l'apprentissage continu, je me concentre sur la création de solutions de haute qualité qui stimulent la croissance de votre entreprise."
+  },
+  "Services": {
+    "section": "02. Expertise",
+    "title1": "CE QUE",
+    "title2": "JE FAIS",
+    "services": {
+      "webDev": {
+        "title": "Développement\nWeb",
+        "description": "Création d'applications web évolutives et performantes en utilisant des technologies modernes comme React, Next.js et Node.js."
+      },
+      "automation": {
+        "title": "Automatisation",
+        "description": "Optimisation des flux de travail et automatisation des tâches répétitives pour accroître l'efficacité."
+      },
+      "graphics": {
+        "title": "Design\nGraphique",
+        "description": "Création de graphismes époustouflants, d'identités visuelles et de supports marketing."
+      },
+      "api": {
+        "title": "Intégration\nAPI",
+        "description": "Développement d'APIs REST et intégration de services tiers."
+      },
+      "seo": {
+        "title": "Performance\n& SEO",
+        "description": "Optimisation des sites web pour la vitesse, l'accessibilité et le référencement naturel."
+      }
+    }
+  },
+  "Projects": {
+    "section": "03. Projets",
+    "title1": "QUELQUES",
+    "title2": "PROJETS",
+    "description": "Nous concevons et développons des produits numériques haut de gamme qui instaurent une confiance absolue et accélèrent la croissance des clients.",
+    "filters": {
+      "All": "Tout",
+      "Web": "Web",
+      "App": "App",
+      "E-commerce": "E-commerce",
+      "Design": "Design"
+    },
+    "project1": {
+      "title": "E-commerce d'Huile d'Argan Bio & Soins Naturels",
+      "category": "E-commerce"
+    },
+    "project2": {
+      "title": "Site Web de Nettoyage Vapeur Professionnel",
+      "category": "Web"
+    },
+    "project3": {
+      "title": "Application Web de Commande de Repas",
+      "category": "Web App"
+    },
+    "project4": {
+      "title": "Plateforme de Gestion d'Événements",
+      "category": "Web App"
+    },
+    "project5": {
+      "title": "Site Vitrine de Construction et Rénovation",
+      "category": "Web"
+    },
+    "project6": {
+      "title": "E-commerce de Miel et Produits du Terroir",
+      "category": "E-commerce"
+    }
+  },
+  "Contact": {
+    "section": "04. Contact",
+    "title1": "Travaillons",
+    "title2": "Ensemble",
+    "callUs": "Appelez-nous",
+    "form": {
+      "name": "Quel est votre nom ?",
+      "email": "Votre adresse e-mail",
+      "message": "Parlez-nous de votre projet",
+      "submit": "Envoyer le message"
+    }
+  },
+  "Footer": {
+    "availability": "Disponible pour des opportunités en freelance",
+    "haveProject": "Vous avez un projet en tête ?",
+    "letsTalk": "Parlons-en",
+    "rights": "© 2026 Mohammad Elcadi. Tous droits réservés.",
+    "backToTop": "Haut de page",
+    "socials": "Réseaux sociaux",
+    "contact": "Contact"
+  }
+}

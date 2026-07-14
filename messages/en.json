@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "greeting1": "Heey",
+    "greeting2": "there",
+    "iam": "I AM",
+    "name": "ELCADI",
+    "role1": "fullstack",
+    "role2": "developer",
+    "description": "We build fast, secure & scalable web applications tailored to your business"
+  },
+  "SideMenu": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "projects": "PROJECTS"
+  },
+  "About": {
+    "section": "01. About",
+    "name1": "MOHAMMAD",
+    "name2": "ELCADI",
+    "title": "My Journey & Philosophy",
+    "hireMe": "Hire Me",
+    "exploreWork": "Explore Work",
+    "description": "Hello! I'm Mohammad Elcadi, a Full Stack Web Developer and Freelancer from Morocco. I build modern, secure, and scalable web applications — managing projects from concept to deployment. Passionate about web security and continuous learning, I focus on delivering high-quality solutions that drive real business growth."
+  },
+  "Services": {
+    "section": "02. Expertise",
+    "title1": "WHAT",
+    "title2": "I DO",
+    "services": {
+      "webDev": {
+        "title": "Web\nDevelopment",
+        "description": "Building scalable and performant web applications using modern technologies like React, Next.js, and Node.js."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Streamlining workflows and automating repetitive tasks to boost efficiency."
+      },
+      "graphics": {
+        "title": "Graphics\nDesign",
+        "description": "Creating visually stunning graphics, branding, and marketing materials."
+      },
+      "api": {
+        "title": "API\nIntegration",
+        "description": "Developing REST APIs and integrating third-party services."
+      },
+      "seo": {
+        "title": "Performance\n& SEO",
+        "description": "Optimizing websites for speed, accessibility and SEO."
+      }
+    }
+  },
+  "Projects": {
+    "section": "03. Selected Work",
+    "title1": "FEW OF MY",
+    "title2": "PROJECTS",
+    "description": "We design and develop premium digital products that build ultimate trust and accelerate client growth.",
+    "filters": {
+      "All": "All",
+      "Web": "Web",
+      "App": "App",
+      "E-commerce": "E-commerce",
+      "Design": "Design"
+    },
+    "project1": {
+      "title": "Organic Argan Oil & Natural Care E-commerce",
+      "category": "E-commerce"
+    },
+    "project2": {
+      "title": "Professional Steam Cleaning Services Website",
+      "category": "Web"
+    },
+    "project3": {
+      "title": "Restaurant Food Ordering Web App",
+      "category": "Web App"
+    },
+    "project4": {
+      "title": "Event Management & Ticketing Platform",
+      "category": "Web App"
+    },
+    "project5": {
+      "title": "Construction & Renovation Corporate Website",
+      "category": "Web"
+    },
+    "project6": {
+      "title": "Honey & Local Terroir Products E-commerce",
+      "category": "E-commerce"
+    }
+  },
+  "Contact": {
+    "section": "04. Contact",
+    "title1": "Let's Work",
+    "title2": "Together",
+    "callUs": "Call Us",
+    "form": {
+      "name": "What's your name?",
+      "email": "Your email address",
+      "message": "Tell us about your project",
+      "submit": "Send Message"
+    }
+  },
+  "Footer": {
+    "availability": "Available for freelance opportunities",
+    "haveProject": "Have a project in mind?",
+    "letsTalk": "Let's talk",
+    "rights": "© 2026 Mohammad Elcadi. All rights reserved.",
+    "backToTop": "Back to Top",
+    "socials": "Socials",
+    "contact": "Contact"
+  }
+}

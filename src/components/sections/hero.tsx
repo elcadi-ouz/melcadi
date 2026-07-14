@@ -83,9 +83,9 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="absolute right-0 md:right-[4%] bottom-[12%] md:bottom-auto md:top-[64%] w-full md:w-auto px-8 md:px-0 max-w-full md:max-w-[420px] text-center md:text-left pointer-events-auto"
+                    className="absolute right-0 md:right-[3%]  bottom-[12%] md:bottom-auto md:top-[66%] w-full md:w-auto px-8 md:px-0 max-w-full md:max-w-[280px] text-center md:text-left pointer-events-auto"
                 >
-                    <p className="text-[16px] md:text-[15px] font-inter font-semibold leading-snug">
+                    <p className="text-[16px] md:text-[15px] font-inter font-semiboldv  leading-snug">
                         {t('description')}
                     </p>
                 </motion.div>

@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
@@ -10,6 +10,67 @@ import Magnetic from "@/components/sections/Magnetic";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import type { Metadata } from "next";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://melcadi.com/#person",
+      "name": "Mohammad El Cadi",
+      "url": "https://melcadi.com",
+      "jobTitle": "Full Stack Web Developer & Digital Product Designer",
+      "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth.",
+      "image": "https://melcadi.com/profile.jpg",
+      "knowsAbout": [
+        "Web Development",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Digital Product Design",
+        "UI/UX Design",
+        "SEO Optimization"
+      ],
+      "sameAs": [
+        "https://github.com/elcadii",
+        "https://www.linkedin.com/in/mohammadelcadi",
+        "https://x.com/elcadi_mohammad",
+        "https://www.instagram.com/mohammadelcadi"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://melcadi.com/#service",
+      "name": "Mohammad El Cadi - Freelance Web Developer",
+      "url": "https://melcadi.com",
+      "logo": "https://melcadi.com/logo.png",
+      "image": "https://melcadi.com/profile.jpg",
+      "description": "Freelance web development and digital design services based in Agadir, Morocco. Specializing in high-performance websites and web applications.",
+      "telephone": "+212644334262",
+      "email": "mohammad.elcadi.dev@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Agadir",
+        "addressRegion": "Souss-Massa",
+        "addressCountry": "MA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.427755",
+        "longitude": "-9.598107"
+      },
+      "areaServed": [
+        "Agadir",
+        "Morocco",
+        "Worldwide"
+      ],
+      "priceRange": "$$",
+      "founder": {
+        "@id": "https://melcadi.com/#person"
+      }
+    }
+  ]
+};
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -30,10 +91,63 @@ const anton = Anton({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Hero Portfolio",
-  description: "Digital Product Designer Portfolio",
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: {
+      template: '%s',
+      default: t('title'),
+    },
+    description: t('description'),
+    keywords: t('keywords'),
+    authors: [{ name: 'Mohammad El Cadi', url: 'https://melcadi.com' }],
+    creator: 'Mohammad El Cadi',
+    metadataBase: new URL('https://melcadi.com'), // Replace with your actual domain when deployed
+    alternates: {
+      canonical: '/',
+      languages: {
+        'en': '/en',
+        'fr': '/fr',
+        'ar': '/ar',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: locale,
+      url: 'https://melcadi.com',
+      title: t('title'),
+      description: t('description'),
+      siteName: 'Mohammad El Cadi',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+      creator: '@elcadi_mohammad',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'ADD_YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', 
+      yandex: 'ADD_YOUR_YANDEX_VERIFICATION_CODE', 
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -57,6 +171,11 @@ export default async function LocaleLayout({
       className={cn("h-full", "antialiased", "scroll-smooth", inter.variable, playfair.variable, anton.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col">
+        {/* JSON-LD Structured Data for Local SEO & Branding */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
 

@@ -68,6 +68,44 @@ const jsonLd = {
       "founder": {
         "@id": "https://melcadi.com/#person"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://melcadi.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work with international clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, I work with clients worldwide as a freelance Full Stack Developer. I have experience collaborating with teams and businesses across different time zones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies do you specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "My primary stack includes React, Next.js, TypeScript, Tailwind CSS, and Node.js. I also specialize in WebGL and 3D experiences using Three.js."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle both design and development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. I provide end-to-end solutions, starting from UI/UX design in Figma to fully responsive and performant frontend and backend development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure the websites are fast and SEO optimized?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I utilize Next.js Server-Side Rendering (SSR), strict Core Web Vitals optimization, lazy loading, and Generative Engine Optimization (GEO) strategies to ensure high rankings and performance."
+          }
+        }
+      ]
     }
   ]
 };

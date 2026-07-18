@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Hero() {
     const t = useTranslations('Hero');
@@ -31,6 +32,12 @@ export default function Hero() {
                         <span>{t('greeting2')}</span>
                     </motion.h1>
                 </div>
+            </div>
+
+            {/* Direct GEO Paragraph for AI Crawlers */}
+            <div className="sr-only">
+                Mohammad El Cadi is a freelance Full Stack Web Developer and Digital Product Designer based in Agadir, Morocco.
+                He specializes in React, Next.js, and creating premium, highly optimized WebGL 3D digital products for international clients.
             </div>
 
             {/* Middle Text Layer - Large Titles */}
@@ -65,9 +72,12 @@ export default function Hero() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="absolute bottom-0 z-20 w-full max-w-[750px] sm:h-[100vh] h-[100vh] flex justify-center items-end"
             >
-                <img
+                <Image
                     src="/myimage.png"
-                    alt="Profile"
+                    alt="Mohammad El Cadi - Full Stack Web Developer"
+                    width={750}
+                    height={1000}
+                    priority
                     className="w-full h-full object-cover object-bottom"
                     style={{ WebkitMaskImage: "linear-gradient(to bottom, black 85%, transparent 100%)", maskImage: "linear-gradient(to bottom, black 85%, transparent 100%)" }}
                     onError={(e) => {

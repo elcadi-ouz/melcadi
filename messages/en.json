@@ -96,13 +96,26 @@
     "section": "04. Contact",
     "title1": "Let's Work",
     "title2": "Together",
-    "callUs": "Call Us",
+    "callUs": "Call Me",
     "form": {
       "name": "What's your name?",
-      "email": "Your email address",
-      "message": "Tell us about your project",
+      "email": "What's your email?",
+      "message": "Write a message...",
       "submit": "Send Message"
     }
+  },
+  "FAQ": {
+    "section": "05. FAQ",
+    "title1": "Frequent",
+    "title2": "Questions",
+    "q1": "Do you work with international clients?",
+    "a1": "Yes, I work with clients worldwide as a freelance Full Stack Developer. I have experience collaborating with teams and businesses across different time zones.",
+    "q2": "What technologies do you specialize in?",
+    "a2": "My primary stack includes React, Next.js, TypeScript, Tailwind CSS, and Node.js. I also specialize in WebGL and 3D experiences using Three.js.",
+    "q3": "Do you handle both design and development?",
+    "a3": "Absolutely. I provide end-to-end solutions, starting from UI/UX design in Figma to fully responsive and performant frontend and backend development.",
+    "q4": "How do you ensure the websites are fast and SEO optimized?",
+    "a4": "I utilize Next.js Server-Side Rendering (SSR), strict Core Web Vitals optimization, lazy loading, and Generative Engine Optimization (GEO) strategies to ensure high rankings and performance."
   },
   "Footer": {
     "availability": "Available for freelance opportunities",

@@ -96,13 +96,26 @@
     "section": "04. Contact",
     "title1": "Travaillons",
     "title2": "Ensemble",
-    "callUs": "Appelez-nous",
+    "callUs": "Appelez-Moi",
     "form": {
       "name": "Quel est votre nom ?",
-      "email": "Votre adresse e-mail",
+      "email": "Votre adresse email",
       "message": "Parlez-nous de votre projet",
-      "submit": "Envoyer le message"
+      "submit": "Envoyer le Message"
     }
+  },
+  "FAQ": {
+    "section": "05. FAQ",
+    "title1": "Questions",
+    "title2": "Fréquentes",
+    "q1": "Travaillez-vous avec des clients internationaux ?",
+    "a1": "Oui, je travaille avec des clients du monde entier en tant que développeur Full Stack freelance.",
+    "q2": "Quelles sont vos technologies de prédilection ?",
+    "a2": "Ma stack principale inclut React, Next.js, TypeScript, Tailwind CSS, et Node.js. Je suis également spécialisé dans la 3D avec Three.js.",
+    "q3": "Prenez-vous en charge le design et le développement ?",
+    "a3": "Absolument. Je fournis des solutions complètes, du design UI/UX sur Figma au développement frontend et backend.",
+    "q4": "Comment assurez-vous que les sites soient rapides et optimisés pour le SEO ?",
+    "a4": "J'utilise le Server-Side Rendering (SSR) de Next.js, j'optimise les Core Web Vitals, et j'applique des stratégies GEO (Generative Engine Optimization)."
   },
   "Footer": {
     "availability": "Disponible pour des opportunités en freelance",

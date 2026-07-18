@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Projects() {
   const t = useTranslations('Projects');
@@ -198,11 +199,12 @@ export default function Projects() {
                     <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]" />
                     <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]" />
                   </div>
-                  {/* Safe background image approach avoiding next/image host issues */}
-                  <img
+                  {/* Core Web Vitals Optimization */}
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>

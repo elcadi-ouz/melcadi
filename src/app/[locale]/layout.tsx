@@ -10,6 +10,7 @@ import Magnetic from "@/components/sections/Magnetic";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import type { Metadata } from "next";
+import Preloader from "@/components/ui/Preloader";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -45,12 +46,12 @@ const jsonLd = {
       "url": "https://melcadi.com",
       "logo": "https://melcadi.com/logo.png",
       "image": "https://melcadi.com/profile.jpg",
-      "description": "Freelance web development and digital design services based in Agadir, Morocco. Specializing in high-performance websites and web applications.",
+      "description": "Freelance web development and digital design services based in marrakech, Morocco. Specializing in high-performance websites and web applications.",
       "telephone": "+212644334262",
       "email": "mohammad.elcadi.dev@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Agadir",
+        "addressLocality": "marrakech",
         "addressRegion": "Souss-Massa",
         "addressCountry": "MA"
       },
@@ -60,7 +61,7 @@ const jsonLd = {
         "longitude": "-9.598107"
       },
       "areaServed": [
-        "Agadir",
+        "marrakech",
         "Morocco",
         "Worldwide"
       ],
@@ -215,6 +216,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <NextIntlClientProvider messages={messages}>
+          <Preloader />
           {children}
 
           <div className="fixed bottom-1 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[100] flex items-center justify-center gap-6 mix-blend-difference [&_svg]:w-10 [&_svg]:h-10 [&_svg]:fill-white cursor-pointer">

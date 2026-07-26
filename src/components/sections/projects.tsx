@@ -21,14 +21,14 @@ export default function Projects() {
       category: t('project1.category'),
       image: "/project/janat.png",
       year: "2026",
-      href: "https://jannat-nature.com/",
+      href: "https://tonarouza.vercel.app/",
     },
     {
       title: t('project2.title'),
       category: t('project2.category'),
       image: "/project/eclaby.png",
       year: "2026",
-      href: "https://jannat-nature.com/",
+      href: "https://eclat-by-chaffaur.vercel.app/",
     },
     {
       title: t('project3.title'),
@@ -37,26 +37,20 @@ export default function Projects() {
       year: "2024",
       href: "#",
     },
-    {
-      title: t('project4.title'),
-      category: t('project4.category'),
-      image: "/project/eventmanagment.png",
-      year: "2024",
-      href: "https://www.sitepascher.ma/",
-    },
+
     {
       title: t('project5.title'),
       category: t('project5.category'),
       image: "/project/gmpbt.png",
       year: "2023",
-      href: "#",
+      href: "https://group-marozin-btp-sandy.vercel.app/",
     },
     {
       title: t('project6.title'),
       category: t('project6.category'),
       image: "/project/natural.png",
       year: "2023",
-      href: "#",
+      href: "https://nutrital.vercel.app/",
     },
   ];
 

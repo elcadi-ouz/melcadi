@@ -42,8 +42,8 @@ function M_Logo() {
 
   useFrame((state, delta) => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += delta * 0.10; // Slower, more elegant rotation
-      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.3) * 0.05;
+      groupRef.current.rotation.y += delta * 0.16; // Slower, more elegant rotation
+      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.1) * 0.05;
     }
   });
 

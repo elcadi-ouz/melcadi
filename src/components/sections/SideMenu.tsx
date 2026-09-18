@@ -8,10 +8,12 @@ import { usePathname, useRouter } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl"
 
 const getLinks = (t: any) => [
-  { title: t('home'), href: "#" },
-  { title: t('about'), href: "#" },
-  { title: t('services'), href: "#" },
-  { title: t('projects'), href: "#" },
+  { title: t('home'), href: "/" },
+  { title: t('about'), href: "/#about" },
+  { title: t('services'), href: "/#services" },
+  { title: t('projects'), href: "/#projects" },
+  { title: t('privacy'), href: "/privacy" },
+  { title: t('terms'), href: "/terms" },
 ];
 
 export default function SideMenu() {
@@ -156,7 +158,7 @@ export default function SideMenu() {
 
               </nav>
               <div className="mt-6 md:mt-8 flex gap-4 menu-footer">
-                {['en', 'fr'].map((l) => (
+                {['en', 'fr', 'ar'].map((l) => (
                   <button
                     key={l}
                     onClick={() => handleLanguageChange(l)}
@@ -176,7 +178,7 @@ export default function SideMenu() {
                   <a href="https://www.instagram.com/mohammadelcadi" className="hover:text-white transition-colors uppercase tracking-[0.2em]">Instagram</a>
                 </div>
                 <div className="font-playfair italic text-lg text-gray-500">
-                  mohammad.elcadi.dev@gmail.com
+                  elcadi.mohammad.dev@gmail.com
                 </div>
               </div>
             </div>

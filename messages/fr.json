@@ -12,7 +12,9 @@
     "home": "ACCUEIL",
     "about": "À PROPOS",
     "services": "SERVICES",
-    "projects": "PROJETS"
+    "projects": "PROJETS",
+    "privacy": "POLITIQUE DE CONFIDENTIALITÉ",
+    "terms": "CONDITIONS D'UTILISATION"
   },
   "About": {
     "section": "01. À propos",
@@ -21,7 +23,7 @@
     "title": "Mon Parcours & Ma Philosophie",
     "hireMe": "Engagez-moi",
     "exploreWork": "Découvrir",
-    "description": "Bonjour ! Je suis Mohammad Elcadi, développeur web full-stack et freelance marocain. Je conçois des applications web modernes, sécurisées et évolutives — de la conception au déploiement. Passionné par la sécurité web et l'apprentissage continu, je me concentre sur la création de solutions de haute qualité qui stimulent la croissance de votre entreprise."
+    "description": "Bonjour ! Je suis Mohammad Elcadi, développeur web full-stack et freelance basé à Marrakech, Maroc. Je conçois des applications web modernes, sécurisées et évolutives — de la conception au déploiement. Passionné par la sécurité web et l'apprentissage continu, je me concentre sur la création de solutions de haute qualité qui stimulent la croissance de votre entreprise."
   },
   "Services": {
     "section": "02. Expertise",
@@ -89,8 +91,8 @@
   },
   "Metadata": {
     "title": "Mohammad El Cadi | Développeur Web & Concepteur de Produits Numériques",
-    "description": "Je conçois et développe des produits numériques haut de gamme qui renforcent la confiance et accélèrent la croissance de vos clients. Basé à Agadir, Maroc.",
-    "keywords": "développeur web, développeur frontend, concepteur de produits numériques, développeur react, développeur next.js, développeur web freelance maroc, développeur web agadir, mohammad el cadi"
+    "description": "Je conçois et développe des produits numériques haut de gamme qui renforcent la confiance et accélèrent la croissance de vos clients. Basé à Marrakech, Maroc.",
+    "keywords": "développeur web, développeur frontend, concepteur de produits numériques, développeur react, développeur next.js, développeur web freelance maroc, développeur web marrakech, mohammad el cadi"
   },
   "Contact": {
     "section": "04. Contact",
@@ -124,6 +126,44 @@
     "rights": "© 2026 Mohammad Elcadi. Tous droits réservés.",
     "backToTop": "Haut de page",
     "socials": "Réseaux sociaux",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "CookieBanner": {
+    "title": "Respect de votre vie privée",
+    "message": "Nous utilisons des cookies pour personnaliser le contenu, les publicités et analyser notre trafic conformément aux directives Google AdSense et aux lois sur la confidentialité.",
+    "accept": "Tout accepter",
+    "decline": "Refuser le non-essentiel",
+    "learnMore": "Politique de confidentialité"
+  },
+  "Privacy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Google AdSense & Protection des Données Personnelles",
+    "lastUpdated": "Dernière mise à jour : Mars 2026",
+    "intro": "Chez melcadi.com, géré par Mohammad El Cadi (Marrakech, Maroc), accessible depuis https://melcadi.com, la confidentialité de nos visiteurs est une priorité absolue. Ce document décrit les types d'informations collectées et enregistrées par melcadi.com et la façon dont nous les utilisons, notamment concernant Google AdSense.",
+    "adsenseTitle": "Google AdSense & Cookies Publicitaires",
+    "adsenseP1": "Google est un fournisseur tiers sur notre site. Il utilise des cookies, appelés cookies DART, pour diffuser des annonces aux visiteurs en fonction de leur visite sur www.melcadi.com et d'autres sites sur Internet.",
+    "adsenseP2": "Les visiteurs peuvent choisir de refuser l'utilisation des cookies DART et la publicité personnalisée en consultant la politique de confidentialité de Google Ad and Content Network à l'adresse : https://www.google.com/settings/ads ou http://www.aboutads.info/choices/.",
+    "logFilesTitle": "Fichiers Journaux & Analyse",
+    "logFilesDesc": "melcadi.com suit une procédure standard d'utilisation de fichiers journaux (log files). Ces fichiers enregistrent les visiteurs lorsqu'ils visitent des sites web. Les informations recueillies comprennent les adresses IP, le type de navigateur, le fournisseur d'accès (FAI), l'horodatage, et le nombre de clics.",
+    "rightsTitle": "Vos Droits (Loi marocaine 09-08 & RGPD)",
+    "rightsDesc": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour toute demande, contactez-nous à elcadi.mohammad.dev@gmail.com.",
+    "contactTitle": "Informations de Contact",
+    "contactDesc": "Pour toute question concernant notre politique de confidentialité, contactez Mohammad El Cadi à elcadi.mohammad.dev@gmail.com ou par téléphone au +212 644 334 262 (Marrakech, Maroc)."
+  },
+  "Terms": {
+    "title": "Conditions Générales d'Utilisation",
+    "subtitle": "Conditions et Termes d'Utilisation du Site",
+    "lastUpdated": "Dernière mise à jour : Mars 2026",
+    "intro": "Bienvenue sur melcadi.com ! Ces conditions générales régissent l'utilisation du site web de Mohammad El Cadi, situé à l'adresse https://melcadi.com.",
+    "ipTitle": "Propriété Intellectuelle",
+    "ipDesc": "Sauf indication contraire, Mohammad El Cadi et/ou ses concédants de licence détiennent les droits de propriété intellectuelle pour tout le matériel présent sur melcadi.com.",
+    "useTitle": "Utilisation Acceptable",
+    "useDesc": "Vous ne devez pas utiliser ce site web d'une manière qui cause ou pourrait causer des dommages au site web ou en altérer la disponibilité.",
+    "disclaimerTitle": "Limitation de Responsabilité",
+    "disclaimerDesc": "Dans la mesure maximale permise par la loi applicable, nous excluons toutes les déclarations, garanties et conditions relatives à notre site web.",
+    "lawTitle": "Droit Applicable",
+    "lawDesc": "Ces conditions seront régies et interprétées conformément aux lois du Royaume du Maroc. Vous vous soumettez à la juridiction des tribunaux situés à Marrakech, Maroc."
   }
 }

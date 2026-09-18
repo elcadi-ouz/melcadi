@@ -11,6 +11,8 @@ import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import type { Metadata } from "next";
 import Preloader from "@/components/ui/Preloader";
+import CookieBanner from "@/components/ui/CookieBanner";
+import AdSenseScript from "@/components/AdSenseScript";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -48,11 +50,11 @@ const jsonLd = {
       "image": "https://melcadi.com/profile.jpg",
       "description": "Freelance web development and digital design services based in marrakech, Morocco. Specializing in high-performance websites and web applications.",
       "telephone": "+212644334262",
-      "email": "mohammad.elcadi.dev@gmail.com",
+      "email": "elcadi.mohammad.dev@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "marrakech",
-        "addressRegion": "Souss-Massa",
+        "addressLocality": "Marrakech",
+        "addressRegion": "Marrakech-Safi",
         "addressCountry": "MA"
       },
       "geo": {
@@ -216,8 +218,10 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <NextIntlClientProvider messages={messages}>
+          <AdSenseScript />
           <Preloader />
           {children}
+          <CookieBanner />
 
           <div className="fixed bottom-1 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[100] flex items-center justify-center gap-6 mix-blend-difference [&_svg]:w-10 [&_svg]:h-10 [&_svg]:fill-white cursor-pointer">
             <Magnetic>

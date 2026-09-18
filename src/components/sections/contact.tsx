@@ -125,8 +125,8 @@ export default function Contact() {
               <div className="overflow-hidden">
                 <div className="form-reveal">
                   <h4 className="text-gray-400 font-bold tracking-[0.2em] text-xs mb-3 uppercase">Email Us</h4>
-                  <a href="mailto:mohammad.elcadi.dev@gmail.com" className="text-2xl md:text-3xl font-inter font-medium hover:italic transition-all duration-300 relative inline-block group">
-                    mohammad.elcadi.dev@gmail.com
+                  <a href="mailto:elcadi.mohammad.dev@gmail.com" className="text-2xl md:text-3xl font-inter font-medium hover:italic transition-all duration-300 relative inline-block group">
+                    elcadi.mohammad.dev@gmail.com
                     <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full" />
                   </a>
                 </div>

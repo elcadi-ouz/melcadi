@@ -187,6 +187,9 @@ export async function generateMetadata({
       google: 'ADD_YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', 
       yandex: 'ADD_YOUR_YANDEX_VERIFICATION_CODE', 
     },
+    other: {
+      'google-adsense-account': 'ca-pub-4483345920198459',
+    },
   };
 }
 
@@ -211,6 +214,14 @@ export default async function LocaleLayout({
       dir={locale === 'ar' ? 'rtl' : 'ltr'}
       className={cn("h-full", "antialiased", "scroll-smooth", inter.variable, playfair.variable, anton.variable, "font-sans", geist.variable)}
     >
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-4483345920198459" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4483345920198459"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Structured Data for Local SEO & Branding */}
         <script

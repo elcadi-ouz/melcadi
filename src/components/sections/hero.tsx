@@ -1,27 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Hero() {
     const t = useTranslations('Hero');
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
 
     return (
-        <main className="relative w-full h-screen overflow-hidden flex justify-center bg-gradient-to-b from-[#fdfbf6] via-[#fce8ce] to-[#ffffff]">
+        <section id="hero" className="relative w-full h-screen overflow-hidden flex justify-center bg-gradient-to-b from-[#fdfbf6] via-[#fce8ce] to-[#ffffff]">
             {/* Background layer */}
 
             <div className="absolute inset-0 z-20 pointer-events-none mix-blend-difference text-white">
                 {/* Top text "Heey there" */}
-                <div className="absolute top-[12%] md:top-[12%] left-0 w-full flex justify-center absolute -z-20 items-center pointer-events-none">
+                <div className="absolute top-[12%] md:top-[12%] left-0 w-full flex justify-center -z-20 items-center pointer-events-none">
                     <motion.h1
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
@@ -36,8 +28,8 @@ export default function Hero() {
 
             {/* Direct GEO Paragraph for AI Crawlers */}
             <div className="sr-only">
-                Mohammad El Cadi is a freelance Full Stack Web Developer and Digital Product Designer based in Agadir, Morocco.
-                He specializes in React, Next.js, and creating premium, highly optimized WebGL 3D digital products for international clients.
+                Mohammad El Cadi is a freelance Full Stack Web Developer and Digital Product Designer based in Marrakech, Morocco.
+                He specializes in React, Next.js, TypeScript, and creating premium, highly optimized WebGL 3D digital products for international clients.
             </div>
 
             {/* Middle Text Layer - Large Titles */}
@@ -47,7 +39,7 @@ export default function Hero() {
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="absolute left-10 -bottom-50 sm:sticky z-40 flex flex-col font-anton uppercase text-[18vw] md:text-[12vw] leading-[0.9] tracking-normal text-center text-left"
+                    className="absolute left-10 -bottom-50 sm:sticky z-40 flex flex-col font-anton uppercase text-[18vw] md:text-[12vw] leading-[0.9] tracking-normal text-left"
                 >
                     <span>{t('iam')}</span>
                     <span>{t('name')}</span>
@@ -74,7 +66,7 @@ export default function Hero() {
             >
                 <Image
                     src="/myimage.png"
-                    alt="Mohammad El Cadi - Full Stack Web Developer"
+                    alt="Mohammad El Cadi - Full Stack Web Developer & Digital Product Designer"
                     width={750}
                     height={1000}
                     priority
@@ -93,7 +85,7 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="absolute right-0 md:right-[3%]  bottom-[12%] md:bottom-auto md:top-[66%] w-full md:w-auto px-8 md:px-0 max-w-full md:max-w-[280px] text-center md:text-left pointer-events-auto"
+                    className="absolute right-0 md:right-[3%] bottom-[12%] md:bottom-auto md:top-[66%] w-full md:w-auto px-8 md:px-0 max-w-full md:max-w-[280px] text-center md:text-left pointer-events-auto"
                 >
                     <p className="text-[16px] md:text-[15px] font-inter font-medium leading-relaxed">
                         {t('description')}
@@ -104,6 +96,7 @@ export default function Hero() {
             {/* Bottom Fade Gradient Overlay */}
             <div className="absolute bottom-0 left-0 w-full h-[15vh] md:h-[6vh] bg-gradient-to-t from-[#ffffff] via-[#ffffff]/80 to-transparent z-30 pointer-events-none"></div>
 
-        </main>
+        </section>
     );
 }
+

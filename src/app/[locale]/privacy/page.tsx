@@ -1,19 +1,41 @@
 import SideMenu from "@/components/sections/SideMenu";
 import Footer from "@/components/sections/footer";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://melcadi.com';
 
 export async function generateMetadata({
   params
 }: {
   params: Promise<{ locale: string }>
-}) {
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Privacy' });
+
   return {
-    title: `${t('title')} | melcadi.com`,
-    description: t('subtitle'),
+    title: t('title'),
+    description: t('intro'),
     alternates: {
       canonical: `/${locale}/privacy`,
+      languages: {
+        'en': '/en/privacy',
+        'fr': '/fr/privacy',
+        'ar': '/ar/privacy',
+        'x-default': '/en/privacy',
+      },
+    },
+    openGraph: {
+      title: `${t('title')} | Mohammad El Cadi`,
+      description: t('intro'),
+      url: `${siteUrl}/${locale}/privacy`,
+      type: 'article',
+      siteName: 'Mohammad El Cadi',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${t('title')} | Mohammad El Cadi`,
+      description: t('intro'),
     },
   };
 }
@@ -26,8 +48,31 @@ export default async function PrivacyPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Privacy' });
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${siteUrl}/${locale}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": t('title'),
+        "item": `${siteUrl}/${locale}/privacy`
+      }
+    ]
+  };
+
   return (
     <main className="bg-[#0a0a0a] text-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <SideMenu />
 
       <article className="max-w-[90%] md:max-w-4xl mx-auto pt-36 pb-20 font-sans leading-relaxed">
@@ -96,3 +141,4 @@ export default async function PrivacyPage({
     </main>
   );
 }
+

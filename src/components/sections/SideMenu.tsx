@@ -12,6 +12,7 @@ const getLinks = (t: any) => [
   { title: t('about'), href: "/#about" },
   { title: t('services'), href: "/#services" },
   { title: t('projects'), href: "/#projects" },
+  { title: t('faq'), href: "/#faq" },
   { title: t('privacy'), href: "/privacy" },
   { title: t('terms'), href: "/terms" },
 ];
@@ -21,9 +22,6 @@ export default function SideMenu() {
   const links = getLinks(t);
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-
-  ;
 
   const locale = useLocale();
   const router = useRouter();
@@ -107,6 +105,7 @@ export default function SideMenu() {
       <div className="fixed top-6 right-6 md:top-8 md:right-8 z-[100] mix-blend-difference text-white">
         <button
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Navigation Menu"
           className="group flex flex-col gap-[6px] justify-center items-center w-14 h-14 rounded-full border border-white/20 hover:border-white transition-colors duration-300 bg-transparent"
         >
           <span className={`block w-6 h-[2px] bg-white transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] ${isOpen ? 'rotate-45 translate-y-[8px]' : ''}`} />

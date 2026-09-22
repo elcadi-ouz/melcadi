@@ -13,6 +13,7 @@
     "about": "ABOUT",
     "services": "SERVICES",
     "projects": "PROJECTS",
+    "faq": "FAQ",
     "privacy": "PRIVACY POLICY",
     "terms": "TERMS OF SERVICE"
   },
@@ -90,7 +91,7 @@
     }
   },
   "Metadata": {
-    "title": "Mohammad El Cadi | Web Developer & Digital Product Designer",
+    "title": "Mohammed Al-Qadi | Web Developer and Digital Solutions Specialist",
     "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth. Based in Marrakech, Morocco.",
     "keywords": "web developer, frontend developer, digital product designer, react developer, next.js developer, freelance web developer morocco, marrakech web developer, mohammad el cadi"
   },

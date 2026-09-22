@@ -1,19 +1,41 @@
 import SideMenu from "@/components/sections/SideMenu";
 import Footer from "@/components/sections/footer";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://melcadi.com';
 
 export async function generateMetadata({
   params
 }: {
   params: Promise<{ locale: string }>
-}) {
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Terms' });
+
   return {
-    title: `${t('title')} | melcadi.com`,
-    description: t('subtitle'),
+    title: t('title'),
+    description: t('intro'),
     alternates: {
       canonical: `/${locale}/terms`,
+      languages: {
+        'en': '/en/terms',
+        'fr': '/fr/terms',
+        'ar': '/ar/terms',
+        'x-default': '/en/terms',
+      },
+    },
+    openGraph: {
+      title: `${t('title')} | Mohammad El Cadi`,
+      description: t('intro'),
+      url: `${siteUrl}/${locale}/terms`,
+      type: 'article',
+      siteName: 'Mohammad El Cadi',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${t('title')} | Mohammad El Cadi`,
+      description: t('intro'),
     },
   };
 }
@@ -26,8 +48,31 @@ export default async function TermsPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Terms' });
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": `${siteUrl}/${locale}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": t('title'),
+        "item": `${siteUrl}/${locale}/terms`
+      }
+    ]
+  };
+
   return (
     <main className="bg-[#0a0a0a] text-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <SideMenu />
 
       <article className="max-w-[90%] md:max-w-4xl mx-auto pt-36 pb-20 font-sans leading-relaxed">
@@ -91,3 +136,4 @@ export default async function TermsPage({
     </main>
   );
 }
+

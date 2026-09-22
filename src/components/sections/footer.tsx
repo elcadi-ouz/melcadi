@@ -121,10 +121,10 @@ export default function Contact() {
         {/* Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-sm md:text-base text-gray-500 font-medium uppercase tracking-widest overflow-hidden">
           <div className="contact-reveal flex flex-wrap justify-center md:justify-start gap-6 md:gap-10">
-            <a href="https://www.instagram.com/mohammadelcadi" className="hover:text-white transition-colors">Instagram</a>
-            <a href="https://x.com/elcadi_mohammad" className="hover:text-white transition-colors">Twitter</a>
-            <a href="https://www.linkedin.com/in/mohammadelcadi" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://github.com/elcadii" className="hover:text-white transition-colors">Github</a>
+            <Link href="https://www.instagram.com/mohammadelcadi" className="hover:text-white transition-colors">Instagram</Link>
+            <Link href="https://x.com/elcadi_mohammad" className="hover:text-white transition-colors">Twitter</Link>
+            <Link href="https://www.linkedin.com/in/mohammadelcadi" className="hover:text-white transition-colors">LinkedIn</Link>
+            <Link href="https://github.com/elcadii" className="hover:text-white transition-colors">Github</Link>
             <Link href="/privacy" className="hover:text-white transition-colors text-gray-300">{t('privacy')}</Link>
             <Link href="/terms" className="hover:text-white transition-colors text-gray-300">{t('terms')}</Link>
           </div>

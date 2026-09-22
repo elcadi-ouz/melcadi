@@ -184,8 +184,8 @@ export async function generateMetadata({
       },
     },
     verification: {
-      google: 'ADD_YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', 
-      yandex: 'ADD_YOUR_YANDEX_VERIFICATION_CODE', 
+      google: 'ADD_YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE',
+      yandex: 'ADD_YOUR_YANDEX_VERIFICATION_CODE',
     },
     other: {
       'google-adsense-account': 'ca-pub-4483345920198459',

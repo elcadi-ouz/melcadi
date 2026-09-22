@@ -52,6 +52,7 @@ export default function About() {
   return (
     <section
       ref={containerRef}
+      id="about"
       className="relative w-full py-6 flex flex-col items-center justify-center overflow-hidden px-4 md:px-12"
     >
       {/* Subtle Dotted Grid Background - Animated Opacity */}

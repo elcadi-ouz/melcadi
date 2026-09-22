@@ -95,6 +95,7 @@ export default function Services() {
             : `${distance + sizes.height}px`,
       }}
       className="relative bg-white"
+      id="services"
     >
       <div className="sticky top-0 h-screen overflow-hidden flex items-center">
 

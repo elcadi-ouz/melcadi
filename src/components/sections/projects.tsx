@@ -112,7 +112,7 @@ export default function Projects() {
       <div className="max-w-[90%] md:max-w-7xl mx-auto">
 
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
+        <div id="projects" className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
           <div className="max-w-3xl">
             <div className="overflow-hidden mb-6 flex items-center gap-4">
               <span className="w-12 h-[2px] bg-black block reveal-text" />

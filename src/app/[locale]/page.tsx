@@ -27,7 +27,7 @@ export default async function Home({
         "@id": `${siteUrl}/${locale}/#webpage`,
         "url": `${siteUrl}/${locale}`,
         "name": "Mohammed Al-Qadi | Web Developer and Digital Solutions Specialist",
-        "description": "Freelance Full Stack Web Developer and Digital Product Designer based in Marrakech, Morocco.",
+        "description": "Freelance Full Stack Web Developer and Digital Product Designer based in Morocco.",
         "inLanguage": locale,
         "isPartOf": {
           "@id": `${siteUrl}/#website`

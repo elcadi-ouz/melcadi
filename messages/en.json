@@ -24,7 +24,7 @@
     "title": "My Journey & Philosophy",
     "hireMe": "Hire Me",
     "exploreWork": "Explore Work",
-    "description": "Hello! I'm Mohammad Elcadi, a Full Stack Web Developer and Freelancer from Marrakech, Morocco. I build modern, secure, and scalable web applications — managing projects from concept to deployment. Passionate about web security and continuous learning, I focus on delivering high-quality solutions that drive real business growth."
+    "description": "Hello! I'm Mohammad Elcadi, a Full Stack Web Developer and Freelancer from Morocco. I build modern, secure, and scalable web applications — managing projects from concept to deployment. Passionate about web security and continuous learning, I focus on delivering high-quality solutions that drive real business growth."
   },
   "Services": {
     "section": "02. Expertise",
@@ -92,8 +92,8 @@
   },
   "Metadata": {
     "title": "Mohammed Al-Qadi | Web Developer and Digital Solutions Specialist",
-    "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth. Based in Marrakech, Morocco.",
-    "keywords": "web developer, frontend developer, digital product designer, react developer, next.js developer, freelance web developer morocco, marrakech web developer, mohammad el cadi"
+    "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth. Based in Morocco.",
+    "keywords": "web developer, frontend developer, digital product designer, react developer, next.js developer, freelance web developer morocco, mohammad el cadi"
   },
   "Contact": {
     "section": "04. Contact",
@@ -142,7 +142,7 @@
     "title": "Privacy Policy",
     "subtitle": "Google AdSense & Data Protection Policy",
     "lastUpdated": "Last updated: March 2026",
-    "intro": "At melcadi.com, operated by Mohammad El Cadi (Marrakech, Morocco), accessible from https://melcadi.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document outlines the types of information collected and recorded by melcadi.com and how we use it, specifically regarding Google AdSense and third-party advertising compliance.",
+    "intro": "At melcadi.com, operated by Mohammad El Cadi (Morocco), accessible from https://melcadi.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document outlines the types of information collected and recorded by melcadi.com and how we use it, specifically regarding Google AdSense and third-party advertising compliance.",
     "adsenseTitle": "Google AdSense & Advertising Cookies",
     "adsenseP1": "Google is a third-party vendor on our site. It uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.melcadi.com and other sites on the internet.",
     "adsenseP2": "Visitors may choose to decline or opt out of the use of DART cookies and personalized advertising by visiting the Google Ad and Content Network Privacy Policy at: https://www.google.com/settings/ads or by visiting http://www.aboutads.info/choices/.",
@@ -151,7 +151,7 @@
     "rightsTitle": "Your Data Rights (Moroccan Law 09-08 & GDPR)",
     "rightsDesc": "You have the right to request access, correction, or deletion of your personal data submitted via our contact forms. For any data protection inquiries, contact us at elcadi.mohammad.dev@gmail.com.",
     "contactTitle": "Contact Information",
-    "contactDesc": "If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact Mohammad El Cadi at elcadi.mohammad.dev@gmail.com or by phone at +212 644 334 262 (Marrakech, Morocco)."
+    "contactDesc": "If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact Mohammad El Cadi at elcadi.mohammad.dev@gmail.com or by phone at +212 644 334 262 (Morocco)."
   },
   "Terms": {
     "title": "Terms of Service",
@@ -165,6 +165,6 @@
     "disclaimerTitle": "Disclaimer & Limitation of Liability",
     "disclaimerDesc": "To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website.",
     "lawTitle": "Governing Law",
-    "lawDesc": "These Terms will be governed by and interpreted in accordance with the laws of the Kingdom of Morocco, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Marrakech, Morocco for the resolution of any disputes."
+    "lawDesc": "These Terms will be governed by and interpreted in accordance with the laws of the Kingdom of Morocco, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Morocco for the resolution of any disputes."
   }
 }

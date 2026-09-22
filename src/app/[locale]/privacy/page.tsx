@@ -131,7 +131,7 @@ export default async function PrivacyPage({
             <div className="pt-4 flex flex-col md:flex-row gap-4 text-sm font-mono text-gray-400">
               <span>📧 Email: <a href="mailto:elcadi.mohammad.dev@gmail.com" className="text-white underline">elcadi.mohammad.dev@gmail.com</a></span>
               <span>📞 Phone: <a href="tel:+212644334262" className="text-white underline">+212 644 334 262</a></span>
-              <span>📍 Location: Marrakech, Morocco</span>
+              <span>📍 Location: Morocco</span>
             </div>
           </section>
         </div>

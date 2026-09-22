@@ -26,7 +26,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       "url": siteUrl,
       "name": "Mohammad El Cadi",
-      "description": "Full Stack Web Developer & Digital Product Designer based in Marrakech, Morocco.",
+      "description": "Full Stack Web Developer & Digital Product Designer based in Morocco.",
       "publisher": {
         "@id": `${siteUrl}/#person`
       },
@@ -65,22 +65,14 @@ const jsonLd = {
       "url": siteUrl,
       "logo": `${siteUrl}/melcadi-icon.png`,
       "image": `${siteUrl}/heroimage.png`,
-      "description": "Freelance web development and digital design services based in Marrakech, Morocco. Specializing in high-performance websites, Next.js web applications, and digital products.",
+      "description": "Freelance web development and digital design services based in Morocco. Specializing in high-performance websites, Next.js web applications, and digital products.",
       "telephone": "+212644334262",
       "email": "elcadi.mohammad.dev@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Marrakech",
-        "addressRegion": "Marrakech-Safi",
         "addressCountry": "MA"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "31.6295",
-        "longitude": "-7.9811"
-      },
       "areaServed": [
-        "Marrakech",
         "Morocco",
         "Worldwide"
       ],

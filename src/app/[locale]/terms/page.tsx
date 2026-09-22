@@ -126,7 +126,7 @@ export default async function TermsPage({
             </h2>
             <p className="leading-relaxed">{t('lawDesc')}</p>
             <div className="pt-4 text-sm font-mono text-gray-400">
-              <span>📍 Developer Base: Marrakech, Morocco</span>
+              <span>📍 Developer Base: Morocco</span>
             </div>
           </section>
         </div>

@@ -24,7 +24,7 @@
     "title": "Mon Parcours & Ma Philosophie",
     "hireMe": "Engagez-moi",
     "exploreWork": "Découvrir",
-    "description": "Bonjour ! Je suis Mohammad Elcadi, développeur web full-stack et freelance basé à Marrakech, Maroc. Je conçois des applications web modernes, sécurisées et évolutives — de la conception au déploiement. Passionné par la sécurité web et l'apprentissage continu, je me concentre sur la création de solutions de haute qualité qui stimulent la croissance de votre entreprise."
+    "description": "Bonjour ! Je suis Mohammad Elcadi, développeur web full-stack et freelance basé au Maroc. Je conçois des applications web modernes, sécurisées et évolutives — de la conception au déploiement. Passionné par la sécurité web et l'apprentissage continu, je me concentre sur la création de solutions de haute qualité qui stimulent la croissance de votre entreprise."
   },
   "Services": {
     "section": "02. Expertise",
@@ -92,8 +92,8 @@
   },
   "Metadata": {
     "title": "Mohammad El Cadi | Développeur Web & Concepteur de Produits Numériques",
-    "description": "Je conçois et développe des produits numériques haut de gamme qui renforcent la confiance et accélèrent la croissance de vos clients. Basé à Marrakech, Maroc.",
-    "keywords": "développeur web, développeur frontend, concepteur de produits numériques, développeur react, développeur next.js, développeur web freelance maroc, développeur web marrakech, mohammad el cadi"
+    "description": "Je conçois et développe des produits numériques haut de gamme qui renforcent la confiance et accélèrent la croissance de vos clients. Basé au Maroc.",
+    "keywords": "développeur web, développeur frontend, concepteur de produits numériques, développeur react, développeur next.js, développeur web freelance maroc, mohammad el cadi"
   },
   "Contact": {
     "section": "04. Contact",
@@ -142,7 +142,7 @@
     "title": "Politique de Confidentialité",
     "subtitle": "Google AdSense & Protection des Données Personnelles",
     "lastUpdated": "Dernière mise à jour : Mars 2026",
-    "intro": "Chez melcadi.com, géré par Mohammad El Cadi (Marrakech, Maroc), accessible depuis https://melcadi.com, la confidentialité de nos visiteurs est une priorité absolue. Ce document décrit les types d'informations collectées et enregistrées par melcadi.com et la façon dont nous les utilisons, notamment concernant Google AdSense.",
+    "intro": "Chez melcadi.com, géré par Mohammad El Cadi (Maroc), accessible depuis https://melcadi.com, la confidentialité de nos visiteurs est une priorité absolue. Ce document décrit les types d'informations collectées et enregistrées par melcadi.com et la façon dont nous les utilisons, notamment concernant Google AdSense.",
     "adsenseTitle": "Google AdSense & Cookies Publicitaires",
     "adsenseP1": "Google est un fournisseur tiers sur notre site. Il utilise des cookies, appelés cookies DART, pour diffuser des annonces aux visiteurs en fonction de leur visite sur www.melcadi.com et d'autres sites sur Internet.",
     "adsenseP2": "Les visiteurs peuvent choisir de refuser l'utilisation des cookies DART et la publicité personnalisée en consultant la politique de confidentialité de Google Ad and Content Network à l'adresse : https://www.google.com/settings/ads ou http://www.aboutads.info/choices/.",
@@ -151,7 +151,7 @@
     "rightsTitle": "Vos Droits (Loi marocaine 09-08 & RGPD)",
     "rightsDesc": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour toute demande, contactez-nous à elcadi.mohammad.dev@gmail.com.",
     "contactTitle": "Informations de Contact",
-    "contactDesc": "Pour toute question concernant notre politique de confidentialité, contactez Mohammad El Cadi à elcadi.mohammad.dev@gmail.com ou par téléphone au +212 644 334 262 (Marrakech, Maroc)."
+    "contactDesc": "Pour toute question concernant notre politique de confidentialité, contactez Mohammad El Cadi à elcadi.mohammad.dev@gmail.com ou par téléphone au +212 644 334 262 (Maroc)."
   },
   "Terms": {
     "title": "Conditions Générales d'Utilisation",
@@ -165,6 +165,6 @@
     "disclaimerTitle": "Limitation de Responsabilité",
     "disclaimerDesc": "Dans la mesure maximale permise par la loi applicable, nous excluons toutes les déclarations, garanties et conditions relatives à notre site web.",
     "lawTitle": "Droit Applicable",
-    "lawDesc": "Ces conditions seront régies et interprétées conformément aux lois du Royaume du Maroc. Vous vous soumettez à la juridiction des tribunaux situés à Marrakech, Maroc."
+    "lawDesc": "Ces conditions seront régies et interprétées conformément aux lois du Royaume du Maroc. Vous vous soumettez à la juridiction des tribunaux situés au Maroc."
   }
 }

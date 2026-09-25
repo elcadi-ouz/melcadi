@@ -1,0 +1,38 @@
+# Mohammad El Cadi (Mohamed Elcadi) - Full Stack Web Developer & Web Creation Specialist
+
+> Mohammad El Cadi is a senior Full Stack Web Developer and Freelance Digital Solutions Specialist based in Morocco, serving clients worldwide. Specializing in high-performance web creation, Next.js / React web applications, custom e-commerce platforms, REST APIs, and modern WebGL digital experiences.
+
+## Core Capabilities & Services
+
+### 1. Web Creation & Custom Website Development (Création de sites web)
+- **High-Performance Websites**: Custom-built responsive websites using Next.js (Server-Side Rendering & Static Site Generation), React, TypeScript, and Tailwind CSS.
+- **Corporate & Portfolio Websites**: Premium digital representations engineered for trust, SEO/GEO optimization, and conversion.
+- **E-commerce Solutions**: Modern online store development with secure payment gateway integration (Stripe, PayPal, local Moroccan gateways).
+
+### 2. Full Stack Application Development
+- **Frontend Architecture**: React 19, Next.js App Router, TypeScript, WebGL (Three.js), Tailwind CSS, Framer Motion, micro-animations.
+- **Backend Architecture**: Node.js, Express, RESTful APIs, GraphQL, PostgreSQL, MongoDB, Prisma, Authentication (NextAuth / JWT).
+- **Automation & Workflows**: API integration, custom web automation scripts, and serverless workflow setups.
+
+### 3. SEO & GEO (Generative Engine Optimization)
+- Technical SEO: Core Web Vitals optimization, JSON-LD Structured Data, canonical tags, automated sitemaps, semantic HTML5.
+- Generative AI Optimization (GEO): Optimized site architecture and metadata for AI search engines (ChatGPT, Perplexity AI, Claude, Google Gemini, Bing Copilot).
+
+## Professional Links & Contact
+
+- **Website**: https://melcadi.com
+- **GitHub**: https://github.com/elcadii
+- **LinkedIn**: https://www.linkedin.com/in/mohammadelcadi
+- **X (Twitter)**: https://x.com/elcadi_mohammad
+- **Instagram**: https://www.instagram.com/mohammadelcadi
+- **Email**: elcadi.mohammad.dev@gmail.com
+- **Phone**: +212 644 334 262
+- **Location**: Morocco (Available for Remote Worldwide Freelance Opportunities)
+
+## Target Keywords & Expertise
+- Full Stack Developer / Développeur Fullstack
+- Web Creation / Création de sites web / إنشاء المواقع الإلكترونية
+- Freelance Web Developer Morocco / Développeur Web Freelance Maroc
+- Next.js & React Expert / Spécialiste Next.js & React
+- Node.js & API Developer / Développeur Node.js & API
+- Digital Solutions & E-commerce / Solutions Numériques & E-commerce

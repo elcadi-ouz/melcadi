@@ -26,7 +26,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       "url": siteUrl,
       "name": "Mohammad El Cadi",
-      "description": "Full Stack Web Developer & Digital Solutions Specialist based in Morocco.",
+      "description": "Full Stack Web Developer & Web Creation Specialist based in Morocco, serving worldwide.",
       "publisher": {
         "@id": `${siteUrl}/#person`
       },
@@ -37,19 +37,23 @@ const jsonLd = {
       "@id": `${siteUrl}/#person`,
       "name": "Mohammad El Cadi",
       "url": siteUrl,
-      "jobTitle": "Full Stack Web Developer & Digital Solutions Specialist",
-      "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth.",
+      "jobTitle": "Full Stack Web Developer & Web Creation Specialist",
+      "description": "Full Stack Developer specializing in high-performance web creation, Next.js web apps, e-commerce, and digital products.",
       "image": `${siteUrl}/heroimage.png`,
       "knowsAbout": [
         "Web Development",
-        "React",
+        "Création de site web",
+        "Full Stack Development",
         "Next.js",
+        "React",
         "TypeScript",
-        "Digital Product Design",
+        "Node.js",
+        "E-commerce Development",
+        "Développeur Web Freelance",
+        "إنشاء المواقع الإلكترونية",
         "UI/UX Design",
-        "SEO Optimization",
-        "WebGL",
-        "Node.js"
+        "SEO & GEO Optimization",
+        "WebGL"
       ],
       "sameAs": [
         "https://github.com/elcadii",
@@ -61,11 +65,11 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": `${siteUrl}/#service`,
-      "name": "Mohammad El Cadi - Freelance Web Developer",
+      "name": "Mohammad El Cadi - Full Stack Web Creation & Development",
       "url": siteUrl,
       "logo": `${siteUrl}/melcadi-icon.png`,
       "image": `${siteUrl}/heroimage.png`,
-      "description": "Freelance web development and digital design services based in Morocco. Specializing in high-performance websites, Next.js web applications, and digital products.",
+      "description": "Freelance web creation and fullstack development services. Specializing in custom websites, Next.js web applications, e-commerce, and API integrations.",
       "telephone": "+212644334262",
       "email": "elcadi.mohammad.dev@gmail.com",
       "address": {
@@ -79,6 +83,36 @@ const jsonLd = {
       "priceRange": "$$",
       "founder": {
         "@id": `${siteUrl}/#person`
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Creation & Custom Website Development / Création de sites web",
+              "description": "Building high-performance, responsive corporate websites, portfolios, and web platforms using Next.js, React, and Tailwind CSS."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Full Stack Application Development",
+              "description": "End-to-end web application engineering with React, Next.js, Node.js, TypeScript, and modern database solutions."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce Development",
+              "description": "Custom online store creation integrated with secure global and local payment gateways."
+            }
+          }
+        ]
       }
     }
   ]

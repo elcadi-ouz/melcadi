@@ -65,7 +65,7 @@ export default function Hero() {
                 className="absolute bottom-0 z-20 w-full max-w-[750px] sm:h-[100vh] h-[100vh] flex justify-center items-end"
             >
                 <Image
-                    src="/myimage.png"
+                    src="/heronaxiii.png"
                     alt="Mohammad El Cadi - Full Stack Web Developer & Digital Solutions Specialist"
                     width={750}
                     height={1000}

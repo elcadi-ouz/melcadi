@@ -26,7 +26,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       "url": siteUrl,
       "name": "Mohammad El Cadi",
-      "description": "Full Stack Web Developer & Digital Product Designer based in Morocco.",
+      "description": "Full Stack Web Developer & Digital Solutions Specialist based in Morocco.",
       "publisher": {
         "@id": `${siteUrl}/#person`
       },
@@ -37,7 +37,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#person`,
       "name": "Mohammad El Cadi",
       "url": siteUrl,
-      "jobTitle": "Full Stack Web Developer & Digital Product Designer",
+      "jobTitle": "Full Stack Web Developer & Digital Solutions Specialist",
       "description": "I design and develop premium digital products that build ultimate trust and accelerate client growth.",
       "image": `${siteUrl}/heroimage.png`,
       "knowsAbout": [
@@ -142,7 +142,7 @@ export async function generateMetadata({
           url: `${siteUrl}/heroimage.png`,
           width: 1200,
           height: 630,
-          alt: 'Mohammad El Cadi — Full Stack Web Developer & Digital Product Designer',
+          alt: 'Mohammad El Cadi — Full Stack Web Developer & Digital Solutions Specialist',
         }
       ],
     },

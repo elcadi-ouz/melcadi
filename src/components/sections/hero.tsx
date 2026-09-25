@@ -28,7 +28,7 @@ export default function Hero() {
 
             {/* Direct GEO Paragraph for AI Crawlers */}
             <div className="sr-only">
-                Mohammad El Cadi is a freelance Full Stack Web Developer and Digital Product Designer based in Morocco.
+                Mohammad El Cadi is a freelance Full Stack Web Developer and Digital Solutions Specialist based in Morocco.
                 He specializes in React, Next.js, TypeScript, and creating premium, highly optimized WebGL 3D digital products for international clients.
             </div>
 
@@ -66,7 +66,7 @@ export default function Hero() {
             >
                 <Image
                     src="/myimage.png"
-                    alt="Mohammad El Cadi - Full Stack Web Developer & Digital Product Designer"
+                    alt="Mohammad El Cadi - Full Stack Web Developer & Digital Solutions Specialist"
                     width={750}
                     height={1000}
                     priority

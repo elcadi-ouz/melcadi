@@ -12,9 +12,6 @@ const getLinks = (t: any) => [
   { title: t('about'), href: "/#about" },
   { title: t('services'), href: "/#services" },
   { title: t('projects'), href: "/#projects" },
-  { title: t('faq'), href: "/#faq" },
-  { title: t('privacy'), href: "/privacy" },
-  { title: t('terms'), href: "/terms" },
 ];
 
 export default function SideMenu() {

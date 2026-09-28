@@ -13,7 +13,7 @@ function M_Logo() {
 
   useEffect(() => {
     const img = new window.Image();
-    img.src = "/melcadi-icon.png";
+    img.src = "/melcadi-icon.webp";
     img.crossOrigin = "Anonymous";
     img.onload = () => {
       const canvas = document.createElement("canvas");
@@ -62,6 +62,20 @@ function M_Logo() {
     </Float>
   );
 }
+
+export function Preloader3D() {
+  return (
+    <Canvas camera={{ position: [0, 0, 5], fov: 50 }} gl={{ powerPreference: "high-performance", antialias: true }}>
+      <ambientLight intensity={1.5} />
+      <directionalLight position={[5, 10, 5]} intensity={2.5} color="#ffffff" />
+      <directionalLight position={[-5, -10, -5]} intensity={1} color="#fce8ce" />
+      <M_Logo />
+    </Canvas>
+  );
+}
+
+import dynamic from "next/dynamic";
+const AsyncPreloader3D = dynamic(() => import("./Preloader").then((mod) => mod.Preloader3D), { ssr: false });
 
 export default function Preloader() {
   const [progress, setProgress] = useState(0);
@@ -127,12 +141,7 @@ export default function Preloader() {
 
           {/* Optimized 3D Canvas */}
           <div className="absolute inset-0 w-full h-full z-10 pointer-events-none">
-            <Canvas camera={{ position: [0, 0, 5], fov: 50 }} gl={{ powerPreference: "high-performance", antialias: true }}>
-              <ambientLight intensity={1.5} />
-              <directionalLight position={[5, 10, 5]} intensity={2.5} color="#ffffff" />
-              <directionalLight position={[-5, -10, -5]} intensity={1} color="#fce8ce" />
-              <M_Logo />
-            </Canvas>
+            <AsyncPreloader3D />
           </div>
 
           {/* UI Layer */}

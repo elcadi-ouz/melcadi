@@ -244,11 +244,6 @@ export default async function LocaleLayout({
       <head>
         <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION || '6n7tC4xqH5BdBYZbXQfNRSXYo_tB_XBWFtYwxUCR8OQ'} />
         <meta name="google-adsense-account" content="ca-pub-4483345920198459" />
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4483345920198459"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) */}

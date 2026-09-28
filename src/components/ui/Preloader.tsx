@@ -2,86 +2,19 @@
 
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Float } from "@react-three/drei";
-import * as THREE from "three";
-
-// High-performance, lightweight 3D Logo (1 mesh instead of 40 stacked meshes)
-function M_Logo() {
-  const meshRef = useRef<THREE.Mesh>(null);
-  const [texture, setTexture] = useState<THREE.CanvasTexture | null>(null);
-
-  useEffect(() => {
-    const img = new window.Image();
-    img.src = "/melcadi-icon.webp";
-    img.crossOrigin = "Anonymous";
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = img.width;
-      canvas.height = img.height;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      ctx.drawImage(img, 0, 0);
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const data = imageData.data;
-      for (let i = 0; i < data.length; i += 4) {
-        // Invert for white logo on transparent background
-        data[i] = 255 - data[i];
-        data[i + 1] = 255 - data[i + 1];
-        data[i + 2] = 255 - data[i + 2];
-      }
-      ctx.putImageData(imageData, 0, 0);
-      const tex = new THREE.CanvasTexture(canvas);
-      tex.needsUpdate = true;
-      setTexture(tex);
-    };
-  }, []);
-
-  useFrame((state, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += delta * 0.4;
-      meshRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.08;
-    }
-  });
-
-  if (!texture) return null;
-
-  return (
-    <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.4}>
-      <mesh ref={meshRef} scale={1.3}>
-        <planeGeometry args={[2.8, 2.8]} />
-        <meshStandardMaterial
-          color="#0a0a0a"
-          metalness={0.8}
-          roughness={0.2}
-          alphaMap={texture}
-          transparent={true}
-          side={THREE.DoubleSide}
-        />
-      </mesh>
-    </Float>
-  );
-}
-
-export function Preloader3D() {
-  return (
-    <Canvas camera={{ position: [0, 0, 5], fov: 50 }} gl={{ powerPreference: "high-performance", antialias: true }}>
-      <ambientLight intensity={1.5} />
-      <directionalLight position={[5, 10, 5]} intensity={2.5} color="#ffffff" />
-      <directionalLight position={[-5, -10, -5]} intensity={1} color="#fce8ce" />
-      <M_Logo />
-    </Canvas>
-  );
-}
-
 import dynamic from "next/dynamic";
-const AsyncPreloader3D = dynamic(() => import("./Preloader").then((mod) => mod.Preloader3D), { ssr: false });
+const AsyncPreloader3D = dynamic(() => import("./Preloader3D"), { ssr: false });
 
 export default function Preloader() {
-  const [progress, setProgress] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const counterRef = useRef<HTMLDivElement>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (window.innerWidth > 768) {
+      setIsDesktop(true);
+    }
     // Check if user has already seen preloader in this session
     const hasSeenPreloader = sessionStorage.getItem("has_seen_preloader");
     if (hasSeenPreloader) {
@@ -90,24 +23,34 @@ export default function Preloader() {
     }
 
     const duration = 1200; // Ultra-fast 1.2s duration
-    const interval = 20;
-    const steps = duration / interval;
-    let currentStep = 0;
+    let start: number | null = null;
+    let animationFrameId: number;
 
-    const timer = setInterval(() => {
-      currentStep++;
-      const easeOut = 1 - Math.pow(1 - currentStep / steps, 3);
-      const newProgress = Math.min(Math.round(easeOut * 100), 100);
-      setProgress(newProgress);
+    const animate = (time: number) => {
+      if (!start) start = time;
+      const elapsed = time - start;
+      const p = Math.min(elapsed / duration, 1);
+      const easeOut = 1 - Math.pow(1 - p, 3);
+      const currentProgress = Math.min(Math.round(easeOut * 100), 100);
 
-      if (currentStep >= steps) {
-        clearInterval(timer);
+      if (counterRef.current) {
+        counterRef.current.innerText = currentProgress + "%";
+      }
+      if (progressBarRef.current) {
+        progressBarRef.current.style.width = currentProgress + "%";
+      }
+
+      if (p < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      } else {
         sessionStorage.setItem("has_seen_preloader", "true");
         setTimeout(() => setIsLoading(false), 200);
       }
-    }, interval);
+    };
 
-    return () => clearInterval(timer);
+    animationFrameId = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   useEffect(() => {
@@ -139,9 +82,9 @@ export default function Preloader() {
             style={{ backgroundImage: 'url("/noise.png")' }}
           ></div>
 
-          {/* Optimized 3D Canvas */}
+          {/* Optimized 3D Canvas (Desktop Only) */}
           <div className="absolute inset-0 w-full h-full z-10 pointer-events-none">
-            <AsyncPreloader3D />
+            {isDesktop && <AsyncPreloader3D />}
           </div>
 
           {/* UI Layer */}
@@ -172,22 +115,22 @@ export default function Preloader() {
             {/* Bottom Progress UI */}
             <div className="w-full flex flex-col md:flex-row justify-between items-end md:items-center gap-4 z-20">
               <div className="w-full max-w-[200px] md:max-w-[300px] h-[2px] bg-black/10 relative overflow-hidden rounded-full">
-                <motion.div
+                <div
+                  ref={progressBarRef}
                   className="absolute top-0 left-0 h-full bg-black rounded-full"
-                  initial={{ width: "0%" }}
-                  animate={{ width: `${progress}%` }}
-                  transition={{ ease: "linear", duration: 0.02 }}
+                  style={{ width: "0%" }}
                 />
               </div>
 
               <div className="flex flex-col items-end">
                 <motion.div
+                  ref={counterRef}
                   className="font-anton text-6xl md:text-8xl leading-[0.8] text-[#0a0a0a]"
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  {progress}%
+                  0%
                 </motion.div>
                 <motion.span
                   className="font-inter font-medium text-xs md:text-sm text-black/50 tracking-widest uppercase mt-2"

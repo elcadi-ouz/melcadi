@@ -11,7 +11,7 @@ import Magnetic from "@/components/sections/Magnetic";
 import { FaInstagram, FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import type { Metadata } from "next";
-import Preloader from "@/components/ui/Preloader";
+import PreloaderWrapper from "@/components/ui/PreloaderWrapper";
 import CookieBanner from "@/components/ui/CookieBanner";
 import AdSenseScript from "@/components/AdSenseScript";
 import Analytics from "@/components/Analytics";
@@ -137,6 +137,18 @@ const anton = Anton({
   subsets: ["latin"],
 });
 
+import type { Viewport } from 'next';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
+  ],
+};
+
 export async function generateMetadata({
   params
 }: {
@@ -258,7 +270,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Analytics />
           <AdSenseScript />
-          <Preloader />
+          <PreloaderWrapper />
           {children}
           <CookieBanner />
 

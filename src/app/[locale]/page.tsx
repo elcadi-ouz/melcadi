@@ -1,12 +1,14 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/sections/hero";
-import About from "@/components/sections/about";
-import Services from "@/components/sections/services";
-import Languages from "@/components/sections/languages";
-import Projects from "@/components/sections/projects";
-import FAQ from "@/components/sections/faq";
 import SideMenu from "@/components/sections/SideMenu";
-import Footer from "@/components/sections/footer";
-import Contact from "@/components/sections/contact";
+
+const About = dynamic(() => import("@/components/sections/about"), { ssr: true });
+const Services = dynamic(() => import("@/components/sections/services"), { ssr: true });
+const Languages = dynamic(() => import("@/components/sections/languages"), { ssr: true });
+const Projects = dynamic(() => import("@/components/sections/projects"), { ssr: true });
+const FAQ = dynamic(() => import("@/components/sections/faq"), { ssr: true });
+const Contact = dynamic(() => import("@/components/sections/contact"), { ssr: true });
+const Footer = dynamic(() => import("@/components/sections/footer"), { ssr: true });
 import { getTranslations } from "next-intl/server";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://melcadi.com';
@@ -26,8 +28,8 @@ export default async function Home({
         "@type": "WebPage",
         "@id": `${siteUrl}/${locale}/#webpage`,
         "url": `${siteUrl}/${locale}`,
-        "name": "Mohammed Al-Qadi | Web Developer and Digital Solutions Specialist",
-        "description": "Freelance Full Stack Web Developer and Digital Product Designer based in Morocco.",
+        "name": "Mohammed EL Cadi | Web Developer and Digital Solutions Specialist",
+        "description": "Freelance Full Stack Web Developer and Digital Solutions Specialist based in Morocco.",
         "inLanguage": locale,
         "isPartOf": {
           "@id": `${siteUrl}/#website`

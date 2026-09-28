@@ -120,16 +120,22 @@ export default function Contact() {
 
         {/* Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-sm md:text-base text-gray-500 font-medium uppercase tracking-widest overflow-hidden">
-          <nav aria-label="Footer navigation" className="contact-reveal flex flex-wrap justify-center md:justify-start gap-6 md:gap-10">
+          <div className="contact-reveal font-playfair italic normal-case text-md text-gray-400">
+            {t('rights')}
+          </div>
+          <nav aria-label="Footer navigation" className="contact-reveal flex flex-wrap justify-center md:justify-start gap-6 text-sm md:gap-10">
             <a href="https://www.instagram.com/mohammadelcadi" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white transition-colors">Instagram</a>
             <a href="https://x.com/elcadi_mohammad" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white transition-colors">Twitter</a>
             <a href="https://www.linkedin.com/in/mohammadelcadi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-white transition-colors">LinkedIn</a>
             <a href="https://github.com/elcadii" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-white transition-colors">Github</a>
-            <Link href="/privacy" className="hover:text-white transition-colors text-gray-300">{t('privacy')}</Link>
-            <Link href="/terms" className="hover:text-white transition-colors text-gray-300">{t('terms')}</Link>
           </nav>
-          <div className="contact-reveal font-playfair italic normal-case text-lg text-gray-400">
-            {t('rights')}
+          <div>
+
+
+          </div>
+          <div className="flex  justify-center md:justify-start gap-2 md:gap-2">
+            <Link href="/privacy" className="hover:text-white text-sm transition-colors text-gray-400">{t('privacy')}</Link>
+            <Link href="/terms" className="hover:text-white text-sm transition-colors text-gray-400">{t('terms')}</Link>
           </div>
         </div>
 

@@ -161,7 +161,7 @@ export default function Projects() {
               onMouseLeave={() => handleMouseLeave(index)}
               className="project-row relative border-b border-gray-200 py-6 md:py-12 flex flex-col md:flex-row md:items-center justify-between cursor-pointer group transition-colors duration-500 "
             >
-              <Link href={project.href} target="_blank" className="absolute inset-0 z-10" />
+              <Link href={project.href} target="_blank" className="absolute inset-0 z-10" aria-label={`View ${project.title} project`} />
 
               <div className="flex flex-col gap-4 max-w-xl z-20 pointer-events-none">
                 <div className="flex items-center gap-4 text-xs md:text-sm font-bold tracking-[0.2em] text-gray-400 uppercase">

@@ -135,3 +135,30 @@ body {
     @apply font-sans;
   }
 }
+
+.animate-hero-text { opacity: 0; animation: hero-text-in 1s ease-out forwards; }
+.animate-hero-title-left { opacity: 0; animation: hero-title-left 1s ease-out 0.3s forwards; }
+.animate-hero-title-right { opacity: 0; animation: hero-title-right 1s ease-out 0.5s forwards; }
+.animate-hero-image { opacity: 0; animation: hero-image-in 1s ease-out 0.2s forwards; }
+.animate-hero-desc { opacity: 0; animation: hero-fade-in 1s ease-out 1s forwards; }
+
+@keyframes hero-text-in {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes hero-title-left {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes hero-title-right {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes hero-image-in {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes hero-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

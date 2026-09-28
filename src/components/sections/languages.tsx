@@ -53,7 +53,7 @@ const MarqueeItem = ({ item }: { item: { name: string, icon: any, color: string 
       className="flex items-center justify-center w-20 h-20 md:w-28 md:h-28 mx-3 border border-gray-100 transition-transform duration-300"
       title={item.name}
     >
-      <Icon className="w-10 h-10 md:w-14 md:h-14" style={{ color: item.color }} />
+      <Icon className="w-10 h-10 md:w-14 md:h-14" style={{ color: item.color }} aria-label={item.name} title={item.name} />
     </div>
   );
 };
